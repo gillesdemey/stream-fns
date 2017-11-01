@@ -38,6 +38,11 @@ class FunctionStream {
     )
   }
 
+  // coerce the stream from the FunctionStream
+  toStream () {
+    return this._source
+  }
+
   // pipe data through function and update our source
   // returns this instance to allow method chaining
   _pipe (through) {
