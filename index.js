@@ -1,7 +1,9 @@
 'use strict'
 
+const batch = require('./src/batch')
 const filter = require('./src/filter')
 const from = require('./src/from')
+const flatten = require('./src/flatten')
 const tap = require('./src/tap')
 const map = require('./src/map')
 const parallel = require('./src/parallel')
@@ -12,6 +14,14 @@ class FunctionStream {
   constructor (source) {
     this._source = from(source)
     return this
+  }
+
+  batch (n) {
+    return this._pipe(batch(n))
+  }
+
+  flatten () {
+    return this._pipe(flatten())
   }
 
   map (fn) {

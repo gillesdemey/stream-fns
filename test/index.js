@@ -3,7 +3,9 @@
 const _ = require('../')
 
 _([1, 2, 3, 4, 5])
-  // .tap(n => console.log(n))
+  .batch(2)
+  .tap(n => console.log(n))
+  .flatten()
   .filter(n => n % 2 === 0) // only even numbers
   .map(n => n * n) // pow 2
   .parallel(2, (data, next) => {

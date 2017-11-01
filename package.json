@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "concat-stream": "^1.6.0",
+    "duplexify": "^3.5.1",
     "flush-write-stream": "^1.0.2",
     "from2-array": "^0.0.4",
     "parallel-transform": "^1.1.0",
