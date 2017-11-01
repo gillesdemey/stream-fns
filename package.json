@@ -1,0 +1,12 @@
+{
+  "name": "streams",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "flush-write-stream": "^1.0.2",
+    "from2-array": "^0.0.4",
+    "parallel-transform": "^1.1.0",
+    "through2": "^2.0.3"
+  }
+}
