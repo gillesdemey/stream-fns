@@ -16,7 +16,4 @@ module.exports = (n = 1) => {
     debugger
     next()
   })
-  .on('end', function () {
-    console.log('end')
-  })
 }
