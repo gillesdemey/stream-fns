@@ -1,8 +1,14 @@
 {
-  "name": "streams",
+  "name": "stream-fns",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "tags": [
+    "streams",
+    "functions",
+    "functional",
+    "objects"
+  ],
   "scripts": {
     "test": "tap --coverage src/*.test.js | faucet"
   },
